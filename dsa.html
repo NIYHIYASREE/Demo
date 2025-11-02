@@ -13,12 +13,10 @@
                     border-radius: 4px;
                     margin: 0.5em 0;
                 }
-
                 code {
 
                     font-family: 'Fira Code', Consolas, Monaco, monospace;
                 }
-
                 /* Custom CSS */
                 /* Add your custom CSS here */
 body {
@@ -29,14 +27,12 @@ body {
 	margin: 0;
 }
 
-
 pre {
 
 	background: #2d2d2d;
 	border-radius: 4px;
 	margin: 0.5em 0;
 }
-
 
 code {
 
@@ -46,7 +42,6 @@ code {
 	overflow-wrap: anywhere;
 }
 
-
 :not(pre)>code {
 j
 	background: #f0f0f0;
@@ -55,12 +50,10 @@ j
 	color: #e83e8c;
 }
 
-
 img {
 j
 	max-width: 100%;
 }
-
 
 table {
 
@@ -69,7 +62,6 @@ table {
 	margin: 1em 0;
 }
 
-
 th,
 td {
 
@@ -77,12 +69,10 @@ td {
 	padding: 8px;
 }
 
-
 th {
 
 	background-color: #f4f4f4;
 }
-
 
 blockquote {
 
@@ -91,7 +81,6 @@ blockquote {
 	margin-left: 0;
 	color: #666;
 }
-
 
 h1 {
 
@@ -102,7 +91,6 @@ h1 {
 	margin: 1.5rem 0;
 }
 
-
 h2 {
 
 	font-size: 1.8em;
@@ -110,13 +98,11 @@ h2 {
 	margin: 1.5rem 0;
 }
 
-
 h3 {
 
 	font-size: 1.4em;
 	color: #455a64;
 }
-
 /* Base paragraph styling for questions */
 p {
 
@@ -131,7 +117,6 @@ p {
     color: #333;
 }
 
-
 /* Make the first number/letter bold for emphasis */
 p::first-letter {
 
@@ -140,14 +125,12 @@ p::first-letter {
     font-size: 1.2em;
 }
 
-
 /* Optional: subtle hover effect */
 p:hover {
 
     background: #fefefe;
     border-left-color: #e83e8c;
 }
-
 
                 
             </style>
@@ -246,22 +229,18 @@ void main() {
         root1 = (-b + sqrt(D))/(2*a);
         root2 = (-b - sqrt(D))/(2*a);
         printf("Roots are real and distinct: %.2f, %.2f", root1, root2);
-    }
- else if(D == 0) {
+    } else if(D == 0) {
 
         root1 = root2 = -b/(2*a);
         printf("Roots are real and equal: %.2f, %.2f", root1, root2);
-    }
- else {
+    } else {
 
         realPart = -b/(2*a);
         imagPart = sqrt(-D)/(2*a);
         printf("Roots are complex: %.2f + %.2fi, %.2f - %.2fi", realPart, imagPart, realPart, imagPart);
     }
-
     getch();
 }
-
 </code></pre>
 <hr>
 <h3><strong>1(b) List ADT using Array</strong></h3>
@@ -282,9 +261,7 @@ void create() {
         printf("Enter element %d: ", i+1);
         scanf("%d", &amp;list[i]);
     }
-
 }
-
 
 void insert() {
 
@@ -299,7 +276,6 @@ void insert() {
     n++;
 }
 
-
 void erase() {
 
     int pos, i;
@@ -310,7 +286,6 @@ void erase() {
     n--;
 }
 
-
 void display() {
 
     int i;
@@ -319,7 +294,6 @@ void display() {
         printf("%d ", list[i]);
     printf("\n");
 }
-
 
 void main() {
 
@@ -336,12 +310,9 @@ void main() {
             case 3: erase(); break;
             case 4: display(); break;
         }
-
-    }
- while(choice != 5);
+    } while(choice != 5);
     getch();
 }
-
 </code></pre>
 <hr>
 <h3><strong>2(a) Sum of Digits using do-while</strong></h3>
@@ -360,12 +331,10 @@ void main() {
         rem = n % 10;
         sum += rem;
         n /= 10;
-    }
- while(n != 0);
+    } while(n != 0);
     printf("Sum of digits of %d is %d", num, sum);
     getch();
 }
-
 </code></pre>
 <hr>
 <h3><strong>2(b) Stack ADT using Array</strong></h3>
@@ -382,15 +351,12 @@ void push() {
     if(top == SIZE-1) {
 
         printf("Stack Overflow\n");
-    }
- else {
+    } else {
 
         top++;
         stack[top] = val;
     }
-
 }
-
 
 void pop() {
 
@@ -399,7 +365,6 @@ void pop() {
     else
         printf("Popped element: %d\n", stack[top--]);
 }
-
 
 void display() {
 
@@ -413,9 +378,7 @@ void display() {
             printf("%d ", stack[i]);
         printf("\n");
     }
-
 }
-
 
 void main() {
 
@@ -431,12 +394,9 @@ void main() {
             case 2: pop(); break;
             case 3: display(); break;
         }
-
-    }
- while(choice !=4);
+    } while(choice !=4);
     getch();
 }
-
 </code></pre>
 <hr>
 <h3><strong>3(a) Armstrong Number</strong></h3>
@@ -453,7 +413,6 @@ void main() {
     temp = num;
     while(temp) {
  digits++; temp/=10; }
-
     temp = num;
     while(temp) {
 
@@ -461,14 +420,12 @@ void main() {
         sum += pow(rem, digits);
         temp /= 10;
     }
-
     if(sum == num)
         printf("%d is an Armstrong number", num);
     else
         printf("%d is not an Armstrong number", num);
     getch();
 }
-
 </code></pre>
 <hr>
 <h3><strong>3(b) Queue ADT using Array</strong></h3>
@@ -485,31 +442,25 @@ void insert() {
     if(rear == SIZE-1) {
 
         printf("Queue Overflow\n");
-    }
- else {
+    } else {
 
         if(front == -1) front = 0;
         rear++;
         queue[rear] = val;
     }
-
 }
-
 
 void delete() {
 
     if(front == -1 || front&gt;rear) {
 
         printf("Queue Underflow\n");
-    }
- else {
+    } else {
 
         printf("Deleted element: %d\n", queue[front]);
         front++;
     }
-
 }
-
 
 void display() {
 
@@ -517,17 +468,14 @@ void display() {
     if(front == -1 || front&gt;rear) {
 
         printf("Queue empty\n");
-    }
- else {
+    } else {
 
         printf("Queue elements: ");
         for(i=front;i&lt;=rear;i++)
             printf("%d ", queue[i]);
         printf("\n");
     }
-
 }
-
 
 void main() {
 
@@ -543,12 +491,9 @@ void main() {
             case 2: delete(); break;
             case 3: display(); break;
         }
-
-    }
- while(choice!=4);
+    } while(choice!=4);
     getch();
 }
-
 </code></pre>
 <hr>
 <hr>
@@ -585,10 +530,8 @@ void main() {
             printf("%d\t", c[i][j]);
         printf("\n");
     }
-
     getch();
 }
-
 </code></pre>
 <hr>
 <h3><strong>4(b) Stack using Linked List</strong></h3>
@@ -600,8 +543,7 @@ struct node {
 
     int data;
     struct node *next;
-}
-*top = NULL;
+}*top = NULL;
 
 void push() {
 
@@ -614,7 +556,6 @@ void push() {
     top = newNode;
 }
 
-
 void pop() {
 
     if(top == NULL)
@@ -626,9 +567,7 @@ void pop() {
         top = top-&gt;next;
         free(temp);
     }
-
 }
-
 
 void display() {
 
@@ -638,17 +577,14 @@ void display() {
         printf("Stack empty\n");
         return;
     }
-
     printf("Stack elements: ");
     while(temp != NULL) {
 
         printf("%d ", temp-&gt;data);
         temp = temp-&gt;next;
     }
-
     printf("\n");
 }
-
 
 void main() {
 
@@ -664,12 +600,9 @@ void main() {
             case 2: pop(); break;
             case 3: display(); break;
         }
-
-    }
- while(choice!=4);
+    } while(choice!=4);
     getch();
 }
-
 </code></pre>
 <hr>
 <h3><strong>5(a) Find Min and Max in Array</strong></h3>
@@ -689,7 +622,6 @@ void main() {
         scanf("%d", &amp;arr[i]);
     }
 
-
     min = max = arr[0];
     for(i=1;i&lt;n;i++) {
 
@@ -697,11 +629,9 @@ void main() {
         if(arr[i] &gt; max) max = arr[i];
     }
 
-
     printf("Minimum: %d\nMaximum: %d", min, max);
     getch();
 }
-
 </code></pre>
 <hr>
 <h3><strong>5(b) Queue using Linked List</strong></h3>
@@ -713,8 +643,7 @@ struct node {
 
     int data;
     struct node *next;
-}
- *front = NULL, *rear = NULL;
+} *front = NULL, *rear = NULL;
 
 void enqueue() {
 
@@ -731,9 +660,7 @@ void enqueue() {
         rear-&gt;next = newNode;
         rear = newNode;
     }
-
 }
-
 
 void dequeue() {
 
@@ -747,9 +674,7 @@ void dequeue() {
         if(front == NULL) rear = NULL;
         free(temp);
     }
-
 }
-
 
 void display() {
 
@@ -759,17 +684,14 @@ void display() {
         printf("Queue empty\n");
         return;
     }
-
     printf("Queue elements: ");
     while(temp != NULL) {
 
         printf("%d ", temp-&gt;data);
         temp = temp-&gt;next;
     }
-
     printf("\n");
 }
-
 
 void main() {
 
@@ -785,12 +707,9 @@ void main() {
             case 2: dequeue(); break;
             case 3: display(); break;
         }
-
-    }
- while(choice!=4);
+    } while(choice!=4);
     getch();
 }
-
 </code></pre>
 <hr>
 <h3><strong>6(a) Sorting Array in Ascending Order</strong></h3>
@@ -810,7 +729,6 @@ void main() {
         scanf("%d", &amp;arr[i]);
     }
 
-
     for(i=0;i&lt;n-1;i++)
         for(j=i+1;j&lt;n;j++)
             if(arr[i] &gt; arr[j]){
@@ -820,13 +738,11 @@ void main() {
                 arr[j] = temp;
             }
 
-
     printf("Sorted Array: ");
     for(i=0;i&lt;n;i++)
         printf("%d ", arr[i]);
     getch();
 }
-
 </code></pre>
 <hr>
 <h3><strong>6(b) LIFO using Array (Stack)</strong></h3>
@@ -846,7 +762,6 @@ void push() {
         stack[++top] = val;
 }
 
-
 void pop() {
 
     if(top == -1)
@@ -854,7 +769,6 @@ void pop() {
     else
         printf("Popped: %d\n", stack[top--]);
 }
-
 
 void display() {
 
@@ -868,9 +782,7 @@ void display() {
             printf("%d ", stack[i]);
         printf("\n");
     }
-
 }
-
 
 void main() {
 
@@ -886,12 +798,9 @@ void main() {
             case 2: pop(); break;
             case 3: display(); break;
         }
-
-    }
- while(choice!=4);
+    } while(choice!=4);
     getch();
 }
-
 </code></pre>
 <hr>
 <h3><strong>7(a) Swap Two Numbers (Pass by Value &amp; Reference)</strong></h3>
@@ -906,14 +815,12 @@ void swapByValue(int a, int b) {
     printf("\nInside swapByValue: a=%d b=%d", a, b);
 }
 
-
 void swapByReference(int *a, int *b) {
 
     int temp = *a;
     *a = *b;
     *b = temp;
 }
-
 
 void main() {
 
@@ -929,7 +836,6 @@ void main() {
     printf("\nAfter swapByReference: x=%d y=%d", x, y);
     getch();
 }
-
 </code></pre>
 <hr>
 <h3><strong>7(b) Infix to Postfix using Stack</strong></h3>
@@ -943,10 +849,8 @@ int top=-1;
 
 void push(char c){
  stack[++top]=c; }
-
 char pop(){
  return stack[top--]; }
-
 int precedence(char c){
 
     if(c=='^') return 3;
@@ -954,7 +858,6 @@ int precedence(char c){
     else if(c=='+' || c=='-') return 1;
     else return 0;
 }
-
 
 void main() {
 
@@ -976,16 +879,13 @@ void main() {
             while(top!=-1 &amp;&amp; stack[top]!='(')
                 postfix[k++] = pop();
             pop(); // remove '('
-        }
- else {
+        } else {
 
             while(top!=-1 &amp;&amp; precedence(stack[top])&gt;=precedence(c))
                 postfix[k++] = pop();
             push(c);
         }
-
     }
-
 
     while(top!=-1)
         postfix[k++] = pop();
@@ -994,7 +894,6 @@ void main() {
     printf("Postfix expression: %s", postfix);
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>8(a) Greatest Among Three Numbers (Nested if)</strong></h2>
@@ -1014,18 +913,15 @@ void main() {
             printf("%d is greatest", a);
         else
             printf("%d is greatest", c);
-    }
- else {
+    } else {
 
         if(b &gt; c)
             printf("%d is greatest", b);
         else
             printf("%d is greatest", c);
     }
-
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>8(b) Addition of Two Polynomials Using Linked List</strong></h2>
@@ -1040,7 +936,6 @@ struct term {
     struct term *next;
 };
 
-
 struct term* createNode(int c, int e){
 
     struct term* newNode = (struct term*)malloc(sizeof(struct term));
@@ -1050,7 +945,6 @@ struct term* createNode(int c, int e){
     return newNode;
 }
 
-
 void display(struct term* poly){
 
     while(poly){
@@ -1059,10 +953,8 @@ void display(struct term* poly){
         if(poly-&gt;next) printf(" + ");
         poly = poly-&gt;next;
     }
-
     printf("\n");
 }
-
 
 struct term* add(struct term* p1, struct term* p2){
 
@@ -1074,40 +966,32 @@ struct term* add(struct term* p1, struct term* p2){
 
             temp = createNode(p1-&gt;coeff, p1-&gt;exp);
             p1 = p1-&gt;next;
-        }
- else if(p1-&gt;exp &lt; p2-&gt;exp){
+        } else if(p1-&gt;exp &lt; p2-&gt;exp){
 
             temp = createNode(p2-&gt;coeff, p2-&gt;exp);
             p2 = p2-&gt;next;
-        }
- else {
+        } else {
 
             temp = createNode(p1-&gt;coeff + p2-&gt;coeff, p1-&gt;exp);
             p1 = p1-&gt;next;
             p2 = p2-&gt;next;
         }
-
         if(!result) result = last = temp;
         else {
  last-&gt;next = temp; last = temp; }
-
     }
-
     while(p1){
 
         struct term *temp = createNode(p1-&gt;coeff, p1-&gt;exp);
         last-&gt;next = temp; last = temp; p1 = p1-&gt;next;
     }
-
     while(p2){
 
         struct term *temp = createNode(p2-&gt;coeff, p2-&gt;exp);
         last-&gt;next = temp; last = temp; p2 = p2-&gt;next;
     }
-
     return result;
 }
-
 
 void main(){
 
@@ -1125,7 +1009,6 @@ void main(){
         node-&gt;next = poly1; poly1 = node;
     }
 
-
     printf("Enter number of terms in second polynomial: ");
     scanf("%d",&amp;n2);
     for(i=0;i&lt;n2;i++){
@@ -1136,7 +1019,6 @@ void main(){
         node-&gt;next = poly2; poly2 = node;
     }
 
-
     printf("Polynomial 1: "); display(poly1);
     printf("Polynomial 2: "); display(poly2);
 
@@ -1145,7 +1027,6 @@ void main(){
 
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>9(a) Factorial Using Recursion</strong></h2>
@@ -1158,7 +1039,6 @@ int factorial(int n){
     else return n*factorial(n-1);
 }
 
-
 void main(){
 
     clrscr();
@@ -1168,7 +1048,6 @@ void main(){
     printf("Factorial of %d is %d", num, factorial(num));
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>9(b) Binary Tree Traversal</strong></h2>
@@ -1182,7 +1061,6 @@ struct node{
     struct node *left, *right;
 };
 
-
 struct node* createNode(int val){
 
     struct node *n = (struct node*)malloc(sizeof(struct node));
@@ -1190,7 +1068,6 @@ struct node* createNode(int val){
     n-&gt;left = n-&gt;right = NULL;
     return n;
 }
-
 
 void inorder(struct node *root){
 
@@ -1200,9 +1077,7 @@ void inorder(struct node *root){
         printf("%d ", root-&gt;data);
         inorder(root-&gt;right);
     }
-
 }
-
 
 void preorder(struct node *root){
 
@@ -1212,9 +1087,7 @@ void preorder(struct node *root){
         preorder(root-&gt;left);
         preorder(root-&gt;right);
     }
-
 }
-
 
 void postorder(struct node *root){
 
@@ -1224,9 +1097,7 @@ void postorder(struct node *root){
         postorder(root-&gt;right);
         printf("%d ", root-&gt;data);
     }
-
 }
-
 
 void main(){
 
@@ -1243,7 +1114,6 @@ void main(){
 
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>10(a) Employee Structure</strong></h2>
@@ -1257,7 +1127,6 @@ struct employee{
     char name[50], designation[50];
     float salary;
 };
-
 
 void main(){
 
@@ -1275,17 +1144,14 @@ void main(){
         printf("Salary: "); scanf("%f",&amp;emp[i].salary);
     }
 
-
     printf("\nEmployee Details:\n");
     for(i=0;i&lt;5;i++){
 
         printf("\nID: %d\nName: %s\nAge: %d\nDesignation: %s\nSalary: %.2f\n",
             emp[i].id, emp[i].name, emp[i].age, emp[i].designation, emp[i].salary);
     }
-
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>10(b) Binary Search in Array</strong></h2>
@@ -1307,17 +1173,14 @@ void main(){
         mid=(low+high)/2;
         if(arr[mid]==key){
  found=1; break;}
-
         else if(arr[mid]&lt;key) low=mid+1;
         else high=mid-1;
     }
-
 
     if(found) printf("%d found at position %d", key, mid+1);
     else printf("%d not found", key);
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>11(a) Student Database using Random Access File</strong></h2>
@@ -1332,7 +1195,6 @@ struct student{
     int age;
     float marks;
 };
-
 
 void main(){
 
@@ -1387,13 +1249,10 @@ void main(){
                     printf("%d %s %d %.2f\n", s.id, s.name, s.age, s.marks);
                 break;
         }
-
-    }
-while(choice!=6);
+    }while(choice!=6);
     fclose(fp);
     getch();
 }
-
 </code></pre>
 <blockquote>
 <p><strong>Note:</strong> <code>ftruncate()</code> may not work directly in Turbo C. For lab, simply read all records, skip the deleted one, and write back to a new file.</p>
@@ -1416,15 +1275,12 @@ void main(){
 
         if(arr[i]==key){
  found=1; break; }
-
     }
-
 
     if(found) printf("%d found at position %d", key, i+1);
     else printf("%d not found", key);
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>12(a) Calculator using Switch</strong></h2>
@@ -1448,15 +1304,12 @@ void main(){
             if(b!=0) result=a/b; 
             else {
  printf("Division by zero!"); getch(); return;}
-
             break;
         default: printf("Invalid choice!"); getch(); return;
     }
-
     printf("Result: %.2f", result);
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>12(b) Insertion Sort</strong></h2>
@@ -1468,7 +1321,6 @@ void main(){
     clrscr();
     int arr[]={
 16,43,92,9,71,88,7,3};
-
     int n=8, i, j, key;
 
     for(i=1;i&lt;n;i++){
@@ -1480,16 +1332,13 @@ void main(){
             arr[j+1]=arr[j];
             j--;
         }
-
         arr[j+1]=key;
     }
-
 
     printf("Sorted Array: ");
     for(i=0;i&lt;n;i++) printf("%d ", arr[i]);
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>13(a) Prime Number Check</strong></h2>
@@ -1506,14 +1355,11 @@ void main(){
 
         if(n%i==0){
  flag=1; break; }
-
     }
-
     if(flag==0) printf("%d is prime", n);
     else printf("%d is not prime", n);
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>13(b) Binary Search Tree (Create, Insert, Delete, View)</strong></h2>
@@ -1527,14 +1373,12 @@ struct node{
     struct node *left, *right;
 };
 
-
 struct node* createNode(int val){
 
     struct node *n = (struct node*)malloc(sizeof(struct node));
     n-&gt;data = val; n-&gt;left = n-&gt;right = NULL;
     return n;
 }
-
 
 struct node* insert(struct node* root, int val){
 
@@ -1544,30 +1388,23 @@ struct node* insert(struct node* root, int val){
     return root;
 }
 
-
 void inorder(struct node *root){
 
     if(root){
  inorder(root-&gt;left); printf("%d ",root-&gt;data); inorder(root-&gt;right);}
-
 }
-
 
 void preorder(struct node *root){
 
     if(root){
  printf("%d ",root-&gt;data); preorder(root-&gt;left); preorder(root-&gt;right);}
-
 }
-
 
 void postorder(struct node *root){
 
     if(root){
  postorder(root-&gt;left); postorder(root-&gt;right); printf("%d ",root-&gt;data);}
-
 }
-
 
 void main(){
 
@@ -1585,12 +1422,9 @@ void main(){
             case 3: printf("Preorder: "); preorder(root); break;
             case 4: printf("Postorder: "); postorder(root); break;
         }
-
-    }
-while(choice!=5);
+    }while(choice!=5);
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>14(a) Payroll Application Using Structure</strong></h2>
@@ -1602,7 +1436,6 @@ struct employee{
     char name[50];
     float basic, hra, da, pf, lic, deduction, gross, net;
 };
-
 
 void main(){
 
@@ -1624,7 +1457,6 @@ void main(){
         e.basic, e.hra, e.da, e.pf, e.lic, e.deduction, e.gross, e.net);
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>14(b) Quick Sort</strong></h2>
@@ -1634,7 +1466,6 @@ void main(){
 void swap(int *a,int *b){
  int t=*a;*a=*b;*b=t;}
 
-
 int partition(int arr[], int low, int high){
 
     int pivot = arr[high];
@@ -1643,13 +1474,10 @@ int partition(int arr[], int low, int high){
 
         if(arr[j]&lt;pivot){
  i++; swap(&amp;arr[i], &amp;arr[j]); }
-
     }
-
     swap(&amp;arr[i+1], &amp;arr[high]);
     return i+1;
 }
-
 
 void quicksort(int arr[], int low, int high){
 
@@ -1659,23 +1487,19 @@ void quicksort(int arr[], int low, int high){
         quicksort(arr,low,pi-1);
         quicksort(arr,pi+1,high);
     }
-
 }
-
 
 void main(){
 
     clrscr();
     int arr[]={
 16,43,92,9,71,88,7,3};
-
     int n=8, i;
     quicksort(arr,0,n-1);
     printf("Sorted Array: ");
     for(i=0;i&lt;n;i++) printf("%d ", arr[i]);
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>15(a) Print Even Numbers up to 20</strong></h2>
@@ -1690,7 +1514,6 @@ void main(){
     for(i=2;i&lt;=20;i+=2) printf("%d ", i);
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>15(b) Hashing with Separate Chaining</strong></h2>
@@ -1706,7 +1529,6 @@ struct node{
     struct node* next;
 };
 
-
 struct node* hashTable[SIZE];
 
 void insert(int key){
@@ -1715,7 +1537,6 @@ void insert(int key){
     struct node* newNode = (struct node*)malloc(sizeof(struct node));
     newNode-&gt;data = key; newNode-&gt;next = hashTable[index]; hashTable[index]=newNode;
 }
-
 
 void display(){
 
@@ -1726,25 +1547,20 @@ void display(){
         struct node* temp = hashTable[i];
         while(temp){
  printf("%d -&gt; ", temp-&gt;data); temp=temp-&gt;next; }
-
         printf("NULL\n");
     }
-
 }
-
 
 void main(){
 
     clrscr();
     int arr[]={
 17,22,11,12,45,27,33,44};
-
     int n=8, i;
     for(i=0;i&lt;n;i++) insert(arr[i]);
     printf("Hash Table:\n"); display();
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>16(a) Exchange Two Numbers Using Pointer and Function</strong></h2>
@@ -1758,7 +1574,6 @@ void swap(int *a, int *b){
     *b = temp;
 }
 
-
 void main(){
 
     clrscr();
@@ -1770,7 +1585,6 @@ void main(){
     printf("After swapping: x=%d, y=%d", x, y);
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>16(b) Hashing with Linear Probing</strong></h2>
@@ -1784,7 +1598,6 @@ void main(){
     int hashTable[SIZE], i;
     int arr[] = {
 11, 32, 63, 18, 46, 5, 123};
-
     int n = 7;
 
     for(i=0;i&lt;SIZE;i++) hashTable[i]=-1;
@@ -1796,17 +1609,14 @@ void main(){
 
             index = (index+1)%SIZE; // Linear Probing
         }
-
         hashTable[index]=key;
     }
-
 
     printf("Hash Table:\n");
     for(i=0;i&lt;SIZE;i++)
         printf("%d: %d\n", i, hashTable[i]);
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>17(a) Matrix Multiplication</strong></h2>
@@ -1824,7 +1634,6 @@ void main(){
 
     if(c1!=r2){
  printf("Matrix multiplication not possible"); getch(); return; }
-
 
     int a[r1][c1], b[r2][c2], c[r1][c2];
     printf("Enter first matrix:\n");
@@ -1845,7 +1654,6 @@ void main(){
                 c[i][j]+=a[i][k]*b[k][j];
         }
 
-
     printf("Resultant Matrix:\n");
     for(i=0;i&lt;r1;i++){
 
@@ -1853,10 +1661,8 @@ void main(){
             printf("%d\t",c[i][j]);
         printf("\n");
     }
-
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>17(b) Linear Search</strong></h2>
@@ -1876,15 +1682,12 @@ void main(){
 
         if(arr[i]==key){
  found=1; break; }
-
     }
-
 
     if(found) printf("%d found at position %d", key, i+1);
     else printf("%d not found", key);
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>18(a) Print Leap Years from 2000 to 2022</strong></h2>
@@ -1901,10 +1704,8 @@ void main(){
         if((year%4==0 &amp;&amp; year%100!=0) || (year%400==0))
             printf("%d ", year);
     }
-
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>18(b) List ADT Using Linked List</strong></h2>
@@ -1916,8 +1717,7 @@ struct node{
 
     int data;
     struct node* next;
-}
- *head=NULL;
+} *head=NULL;
 
 void create(int val){
 
@@ -1926,7 +1726,6 @@ void create(int val){
     newNode-&gt;next = head;
     head = newNode;
 }
-
 
 void insert(int val){
 
@@ -1940,34 +1739,27 @@ void insert(int val){
         while(temp-&gt;next!=NULL) temp=temp-&gt;next;
         temp-&gt;next=newNode;
     }
-
 }
-
 
 void deleteNode(int val){
 
     struct node *temp=head,*prev=NULL;
     while(temp &amp;&amp; temp-&gt;data!=val){
  prev=temp; temp=temp-&gt;next; }
-
     if(temp==NULL){
  printf("Value not found\n"); return; }
-
     if(prev==NULL) head=temp-&gt;next;
     else prev-&gt;next=temp-&gt;next;
     free(temp);
 }
-
 
 void display(){
 
     struct node* temp=head;
     while(temp){
  printf("%d -&gt; ", temp-&gt;data); temp=temp-&gt;next; }
-
     printf("NULL\n");
 }
-
 
 void main(){
 
@@ -1978,7 +1770,6 @@ void main(){
     printf("List after deletion: "); display();
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>19(a) Transpose of a Matrix</strong></h2>
@@ -2008,10 +1799,8 @@ void main(){
             printf("%d\t", trans[i][j]);
         printf("\n");
     }
-
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>19(b) Merge Sort</strong></h2>
@@ -2030,11 +1819,9 @@ void merge(int arr[], int l, int m, int r){
         if(L[i]&lt;=R[j]) arr[k++]=L[i++];
         else arr[k++]=R[j++];
     }
-
     while(i&lt;n1) arr[k++]=L[i++];
     while(j&lt;n2) arr[k++]=R[j++];
 }
-
 
 void mergesort(int arr[], int l, int r){
 
@@ -2045,22 +1832,18 @@ void mergesort(int arr[], int l, int r){
         mergesort(arr,m+1,r);
         merge(arr,l,m,r);
     }
-
 }
-
 
 void main(){
 
     clrscr();
     int arr[]={
-16,43,92,9,71,88,7,3}
-, n=8, i;
+16,43,92,9,71,88,7,3}, n=8, i;
     mergesort(arr,0,n-1);
     printf("Sorted Array: ");
     for(i=0;i&lt;n;i++) printf("%d ",arr[i]);
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>20(a) 6th Multiplication Table Up to 16 Steps</strong></h2>
@@ -2076,7 +1859,6 @@ void main(){
         printf("6 x %d = %d\n", i, 6*i);
     getch();
 }
-
 </code></pre>
 <hr>
 <h2><strong>20(b) BFS for Graph Using C</strong></h2>
@@ -2088,19 +1870,15 @@ int queue[MAX], front=-1, rear=-1;
 
 void enqueue(int v){
  queue[++rear]=v; if(front==-1) front=0; }
-
 int dequeue(){
  return queue[front++]; }
-
 int isEmpty(){
  return front&gt;rear || front==-1; }
-
 
 void BFS(int adj[MAX][MAX], int n, int start){
 
     int visited[MAX]={
-0}
-, i;
+0}, i;
     enqueue(start); visited[start]=1;
     printf("BFS: ");
     while(!isEmpty()){
@@ -2113,13 +1891,9 @@ void BFS(int adj[MAX][MAX], int n, int start){
 
                 enqueue(i); visited[i]=1;
             }
-
         }
-
     }
-
 }
-
 
 void main(){
 
@@ -2134,10 +1908,8 @@ void main(){
     BFS(adj,n,0); // BFS from vertex 0
     getch();
 }
-
 </code></pre>
 <hr>
-
 
             <script>
                 Prism.highlightAll();
