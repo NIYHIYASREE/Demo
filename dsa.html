@@ -1,0 +1,1692 @@
+
+ <html><head>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+            <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&amp;display=swap" rel="stylesheet">                   
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+            <style>
+                /* Default styles */
+                pre {
+                    background: #2d2d2d;
+                    border-radius: 4px;
+                    margin: 0.5em 0;
+                }
+                code {
+                    font-family: 'Fira Code', Consolas, Monaco, monospace;
+                }
+                /* Custom CSS */
+                /* Add your custom CSS here */
+body {
+	font-family: Barlow, sans-serif;
+	line-height: 1.6;
+	padding: 20px;
+	margin: 0;
+}
+
+pre {
+	background: #2d2d2d;
+	border-radius: 4px;
+	margin: 0.5em 0;
+}
+
+code {
+	font-family: 'Fira Code', Consolas, Monaco, monospace;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	overflow-wrap: anywhere;
+}
+
+:not(pre)>code {
+	background: #f0f0f0;
+	padding: 2px 4px;
+	border-radius: 3px;
+	color: #e83e8c;
+}
+
+img {
+	max-width: 100%;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 1em 0;
+}
+
+th,
+td {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+th {
+	background-color: #f4f4f4;
+}
+
+blockquote {
+	border-left: 4px solid #ddd;
+	padding-left: 1em;
+	margin-left: 0;
+	color: #666;
+}
+
+h1 {
+	font-size: 2.2em;
+	color: #2c3e50;
+	border-bottom: 2px solid #eee;
+	padding-bottom: 0.5rem;
+	margin: 1.5rem 0;
+}
+
+h2 {
+	font-size: 1.8em;
+	color: #34495e;
+	margin: 1.5rem 0;
+}
+
+h3 {
+	font-size: 1.4em;
+	color: #455a64;
+}
+/* Base paragraph styling for questions */
+p {
+    margin: 0.8em 0;
+    padding: 0.8em 1em;
+    background: #ffffff;
+    border-left: 5px solid #2c3e50;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Make the first number/letter bold for emphasis */
+p::first-letter {
+    font-weight: bold;
+    color: #e83e8c;
+    font-size: 1.2em;
+}
+
+/* Optional: subtle hover effect */
+p:hover {
+    background: #fefefe;
+    border-left-color: #e83e8c;
+}
+
+                
+            </style>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-sql.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-go.min.js"></script>
+        </head>
+        <body>
+
+          <p>1(a). Write and execute a C Program to find the Roots of the Quadratic Equation.</p>
+<p>1(b). Write a C Program to implement the following various operations for List ADT using array implementation. i.) Create ii.) Insert iii.) Erase.</p>
+
+<p>2(a). Develop and execute a C program to find the sum of the digits of a given number using do while statement.</p>
+<p>2(b). Code a C Program to implement the following various operations for Stack ADT using array implementation. i.) Push ii.) Pop iii.) Display.</p>
+
+<p>3(a). Write and execute a C program to check whether the given number is an Armstrong number or not.</p>
+<p>3(b). Code a C Program to implement the following various operations for Queue ADT using array implementation. i.) Insert ii.) Delete iii.) Display.</p>
+
+<p>4(a). Write and execute a C program for Matrix Subtraction using two dimensional arrays.</p>
+<p>4(b). Code a C program to implement Stack ADT by using linked list for the following operations i.) Push b.) Pop c.) Display.</p>
+
+<p>5(a). Write and execute a C program to find the min and max number in an array.</p>
+<p>5(b). Code a C program to implement Queue ADT by using linked list for the following operations i.) Enqueue ii.) Dequeue iii.) Display.</p>
+
+<p>6(a). Write and execute a C program for Sorting an array of N data in Ascending order.</p>
+<p>6(b). Write a C Program to implement LIFO structure. Use array Implementation.</p>
+
+<p>7(a). Write and execute a C program to swap two number using pass by value and references.</p>
+<p>7(b). Write a C program to convert an infix expression to postfix expression using Stack ADT.</p>
+
+<p>8(a). Write and execute program find the greatest among three number using nested if statement.</p>
+<p>8(b). Write a C program to implement the addition of two polynomials using linked list.</p>
+
+<p>9(a). Write and execute a C program to find the factorial of given number using recursive function.</p>
+<p>9(b). Write a C program to construct a binary tree and display the nodes using inorder, preorder and postorder traversals.</p>
+
+<p>10(a). Write and execute a C program to create a structure called employee with name, employee id, name, age, designation and salary as data members. Accept five employee details and display it.</p>
+<p>10(b). Code a C Program to check whether the given number is in the list using binary search.</p>
+
+<p>11(a). Write and execute a C program to insert, update, delete and append details of students into a student database using random access file.</p>
+<p>11(b). Code a C Program to check whether the given number is in the list using linear search.</p>
+
+<p>12(a). Write and execute a program in C to display Calculator using switch statement.</p>
+<p>12(b). Write a C Program to sort the following numbers using insertion sort: 16, 43, 92, 9, 71, 88, 7, 3</p>
+
+<p>13(a). Write and execute a C Program to find whether a given number is a prime number or not.</p>
+<p>13(b). Write a C Program for Binary Search Tree with the following operations Create, Insert, Delete and View.</p>
+
+<p>14(a). Write and execute a C Program to implement payroll application with the given data by using structure.<br>
+HRA=18% of basic Pay<br>
+DA=15% of Basic Pay<br>
+PF=10% of Basic Pay<br>
+LIC=7% of Basic Pay<br>
+Deduction=PF + LIC<br>
+Gross Salary=Basic Pay + HRA + DA<br>
+Net Salary=Gross Salary â€“ Deduction</p>
+<p>14(b). Write a C Program to sort the following numbers using Quick sort.</p>
+
+<p>15(a). Write and execute a C program to Print all even numbers up to 20.</p>
+<p>15(b). Code a C program to implement the hashing with hash table of size 10 using separate Chaining for the following numbers: 17, 22, 11, 12, 45, 27, 33, 44</p>
+
+<p>16(a). Write and execute a C program to Exchange two numbers using Pointer and Function.</p>
+<p>16(b). Code a C program to implement the hashing with hash table of size 10 using Linear Probing method for the following numbers: 11, 32, 63, 18, 46, 5, 123</p>
+
+<p>17(a). Write and execute a C Program to perform Matrix multiplication.</p>
+<p>17(b). Code a C Program to check whether the given number is in the list using linear search.</p>
+
+<p>18(a). Write and execute a C program to Print all leap years from 2000 to 2022.</p>
+<p>18(b). Using C program to implement List ADT by using linked list for the following operations. i.) Create ii.) Insert iii.) Delete</p>
+
+<p>19(a). Write and execute a C program to print the Transpose of a Matrix.</p>
+<p>19(b). Write a C Program to sort the following numbers using Merge Sort.</p>
+
+<p>20(a). Write and execute a C program to print 6th Multiplication table up to 16 steps.</p>
+<p>20(b). Implement the BFS to perform breadth first search on the graph using C.</p>
+
+            <h3><strong>1(a) Roots of Quadratic Equation</strong></h3>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;math.h&gt;
+
+void main() {
+    clrscr();
+    float a, b, c, D, root1, root2, realPart, imagPart;
+    printf("Enter coefficients a, b, c: ");
+    scanf("%f %f %f", &amp;a, &amp;b, &amp;c);
+
+    D = b*b - 4*a*c;
+
+    if(D &gt; 0) {
+        root1 = (-b + sqrt(D))/(2*a);
+        root2 = (-b - sqrt(D))/(2*a);
+        printf("Roots are real and distinct: %.2f, %.2f", root1, root2);
+    } else if(D == 0) {
+        root1 = root2 = -b/(2*a);
+        printf("Roots are real and equal: %.2f, %.2f", root1, root2);
+    } else {
+        realPart = -b/(2*a);
+        imagPart = sqrt(-D)/(2*a);
+        printf("Roots are complex: %.2f + %.2fi, %.2f - %.2fi", realPart, imagPart, realPart, imagPart);
+    }
+    getch();
+}
+</code></pre>
+<hr>
+<h3><strong>1(b) List ADT using Array</strong></h3>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+#define SIZE 100
+int list[SIZE], n=0;
+
+void create() {
+    int i, elements;
+    printf("Enter number of elements: ");
+    scanf("%d", &amp;elements);
+    n = elements;
+    for(i=0;i&lt;n;i++){
+        printf("Enter element %d: ", i+1);
+        scanf("%d", &amp;list[i]);
+    }
+}
+
+void insert() {
+    int pos, val, i;
+    printf("Enter position to insert: ");
+    scanf("%d", &amp;pos);
+    printf("Enter value: ");
+    scanf("%d", &amp;val);
+    for(i=n-1; i&gt;=pos; i--)
+        list[i+1] = list[i];
+    list[pos] = val;
+    n++;
+}
+
+void erase() {
+    int pos, i;
+    printf("Enter position to delete: ");
+    scanf("%d", &amp;pos);
+    for(i=pos; i&lt;n-1; i++)
+        list[i] = list[i+1];
+    n--;
+}
+
+void display() {
+    int i;
+    printf("List: ");
+    for(i=0;i&lt;n;i++)
+        printf("%d ", list[i]);
+    printf("\n");
+}
+
+void main() {
+    clrscr();
+    int choice;
+    do {
+        printf("\n1.Create 2.Insert 3.Erase 4.Display 5.Exit\nEnter choice: ");
+        scanf("%d", &amp;choice);
+        switch(choice) {
+            case 1: create(); break;
+            case 2: insert(); break;
+            case 3: erase(); break;
+            case 4: display(); break;
+        }
+    } while(choice != 5);
+    getch();
+}
+</code></pre>
+<hr>
+<h3><strong>2(a) Sum of Digits using do-while</strong></h3>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main() {
+    clrscr();
+    int num, sum=0, rem;
+    printf("Enter a number: ");
+    scanf("%d", &amp;num);
+    int n = num;
+    do {
+        rem = n % 10;
+        sum += rem;
+        n /= 10;
+    } while(n != 0);
+    printf("Sum of digits of %d is %d", num, sum);
+    getch();
+}
+</code></pre>
+<hr>
+<h3><strong>2(b) Stack ADT using Array</strong></h3>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#define SIZE 100
+int stack[SIZE], top=-1;
+
+void push() {
+    int val;
+    printf("Enter value to push: ");
+    scanf("%d", &amp;val);
+    if(top == SIZE-1) {
+        printf("Stack Overflow\n");
+    } else {
+        top++;
+        stack[top] = val;
+    }
+}
+
+void pop() {
+    if(top == -1)
+        printf("Stack Underflow\n");
+    else
+        printf("Popped element: %d\n", stack[top--]);
+}
+
+void display() {
+    int i;
+    if(top == -1)
+        printf("Stack empty\n");
+    else {
+        printf("Stack elements: ");
+        for(i=top;i&gt;=0;i--)
+            printf("%d ", stack[i]);
+        printf("\n");
+    }
+}
+
+void main() {
+    clrscr();
+    int choice;
+    do {
+        printf("\n1.Push 2.Pop 3.Display 4.Exit\nEnter choice: ");
+        scanf("%d",&amp;choice);
+        switch(choice){
+            case 1: push(); break;
+            case 2: pop(); break;
+            case 3: display(); break;
+        }
+    } while(choice !=4);
+    getch();
+}
+</code></pre>
+<hr>
+<h3><strong>3(a) Armstrong Number</strong></h3>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;math.h&gt;
+
+void main() {
+    clrscr();
+    int num, temp, sum=0, digits=0, rem;
+    printf("Enter a number: ");
+    scanf("%d", &amp;num);
+    temp = num;
+    while(temp) { digits++; temp/=10; }
+    temp = num;
+    while(temp) {
+        rem = temp % 10;
+        sum += pow(rem, digits);
+        temp /= 10;
+    }
+    if(sum == num)
+        printf("%d is an Armstrong number", num);
+    else
+        printf("%d is not an Armstrong number", num);
+    getch();
+}
+</code></pre>
+<hr>
+<h3><strong>3(b) Queue ADT using Array</strong></h3>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#define SIZE 100
+int queue[SIZE], front=-1, rear=-1;
+
+void insert() {
+    int val;
+    printf("Enter value to insert: ");
+    scanf("%d", &amp;val);
+    if(rear == SIZE-1) {
+        printf("Queue Overflow\n");
+    } else {
+        if(front == -1) front = 0;
+        rear++;
+        queue[rear] = val;
+    }
+}
+
+void delete() {
+    if(front == -1 || front&gt;rear) {
+        printf("Queue Underflow\n");
+    } else {
+        printf("Deleted element: %d\n", queue[front]);
+        front++;
+    }
+}
+
+void display() {
+    int i;
+    if(front == -1 || front&gt;rear) {
+        printf("Queue empty\n");
+    } else {
+        printf("Queue elements: ");
+        for(i=front;i&lt;=rear;i++)
+            printf("%d ", queue[i]);
+        printf("\n");
+    }
+}
+
+void main() {
+    clrscr();
+    int choice;
+    do {
+        printf("\n1.Insert 2.Delete 3.Display 4.Exit\nEnter choice: ");
+        scanf("%d",&amp;choice);
+        switch(choice){
+            case 1: insert(); break;
+            case 2: delete(); break;
+            case 3: display(); break;
+        }
+    } while(choice!=4);
+    getch();
+}
+</code></pre>
+<hr>
+<hr>
+<h3><strong>4(a) Matrix Subtraction</strong></h3>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main() {
+    clrscr();
+    int m, n, i, j;
+    printf("Enter number of rows and columns: ");
+    scanf("%d %d", &amp;m, &amp;n);
+    int a[m][n], b[m][n], c[m][n];
+
+    printf("Enter first matrix:\n");
+    for(i=0;i&lt;m;i++)
+        for(j=0;j&lt;n;j++)
+            scanf("%d", &amp;a[i][j]);
+
+    printf("Enter second matrix:\n");
+    for(i=0;i&lt;m;i++)
+        for(j=0;j&lt;n;j++)
+            scanf("%d", &amp;b[i][j]);
+
+    for(i=0;i&lt;m;i++)
+        for(j=0;j&lt;n;j++)
+            c[i][j] = a[i][j] - b[i][j];
+
+    printf("Subtraction result:\n");
+    for(i=0;i&lt;m;i++){
+        for(j=0;j&lt;n;j++)
+            printf("%d\t", c[i][j]);
+        printf("\n");
+    }
+    getch();
+}
+</code></pre>
+<hr>
+<h3><strong>4(b) Stack using Linked List</strong></h3>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;stdlib.h&gt;
+
+struct node {
+    int data;
+    struct node *next;
+}*top = NULL;
+
+void push() {
+    int val;
+    struct node *newNode = (struct node*)malloc(sizeof(struct node));
+    printf("Enter value to push: ");
+    scanf("%d", &amp;val);
+    newNode-&gt;data = val;
+    newNode-&gt;next = top;
+    top = newNode;
+}
+
+void pop() {
+    if(top == NULL)
+        printf("Stack Underflow\n");
+    else {
+        struct node *temp = top;
+        printf("Popped: %d\n", top-&gt;data);
+        top = top-&gt;next;
+        free(temp);
+    }
+}
+
+void display() {
+    struct node *temp = top;
+    if(top == NULL) {
+        printf("Stack empty\n");
+        return;
+    }
+    printf("Stack elements: ");
+    while(temp != NULL) {
+        printf("%d ", temp-&gt;data);
+        temp = temp-&gt;next;
+    }
+    printf("\n");
+}
+
+void main() {
+    clrscr();
+    int choice;
+    do {
+        printf("\n1.Push 2.Pop 3.Display 4.Exit\nEnter choice: ");
+        scanf("%d",&amp;choice);
+        switch(choice){
+            case 1: push(); break;
+            case 2: pop(); break;
+            case 3: display(); break;
+        }
+    } while(choice!=4);
+    getch();
+}
+</code></pre>
+<hr>
+<h3><strong>5(a) Find Min and Max in Array</strong></h3>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main() {
+    clrscr();
+    int n, i, min, max;
+    printf("Enter number of elements: ");
+    scanf("%d", &amp;n);
+    int arr[n];
+    for(i=0;i&lt;n;i++) {
+        printf("Enter element %d: ", i+1);
+        scanf("%d", &amp;arr[i]);
+    }
+
+    min = max = arr[0];
+    for(i=1;i&lt;n;i++) {
+        if(arr[i] &lt; min) min = arr[i];
+        if(arr[i] &gt; max) max = arr[i];
+    }
+
+    printf("Minimum: %d\nMaximum: %d", min, max);
+    getch();
+}
+</code></pre>
+<hr>
+<h3><strong>5(b) Queue using Linked List</strong></h3>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;stdlib.h&gt;
+
+struct node {
+    int data;
+    struct node *next;
+} *front = NULL, *rear = NULL;
+
+void enqueue() {
+    int val;
+    struct node *newNode = (struct node*)malloc(sizeof(struct node));
+    printf("Enter value to enqueue: ");
+    scanf("%d", &amp;val);
+    newNode-&gt;data = val;
+    newNode-&gt;next = NULL;
+    if(rear == NULL)
+        front = rear = newNode;
+    else {
+        rear-&gt;next = newNode;
+        rear = newNode;
+    }
+}
+
+void dequeue() {
+    if(front == NULL)
+        printf("Queue Underflow\n");
+    else {
+        struct node *temp = front;
+        printf("Dequeued: %d\n", front-&gt;data);
+        front = front-&gt;next;
+        if(front == NULL) rear = NULL;
+        free(temp);
+    }
+}
+
+void display() {
+    struct node *temp = front;
+    if(front == NULL) {
+        printf("Queue empty\n");
+        return;
+    }
+    printf("Queue elements: ");
+    while(temp != NULL) {
+        printf("%d ", temp-&gt;data);
+        temp = temp-&gt;next;
+    }
+    printf("\n");
+}
+
+void main() {
+    clrscr();
+    int choice;
+    do {
+        printf("\n1.Enqueue 2.Dequeue 3.Display 4.Exit\nEnter choice: ");
+        scanf("%d",&amp;choice);
+        switch(choice){
+            case 1: enqueue(); break;
+            case 2: dequeue(); break;
+            case 3: display(); break;
+        }
+    } while(choice!=4);
+    getch();
+}
+</code></pre>
+<hr>
+<h3><strong>6(a) Sorting Array in Ascending Order</strong></h3>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main() {
+    clrscr();
+    int n, i, j, temp;
+    printf("Enter number of elements: ");
+    scanf("%d", &amp;n);
+    int arr[n];
+    for(i=0;i&lt;n;i++){
+        printf("Enter element %d: ", i+1);
+        scanf("%d", &amp;arr[i]);
+    }
+
+    for(i=0;i&lt;n-1;i++)
+        for(j=i+1;j&lt;n;j++)
+            if(arr[i] &gt; arr[j]){
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+
+    printf("Sorted Array: ");
+    for(i=0;i&lt;n;i++)
+        printf("%d ", arr[i]);
+    getch();
+}
+</code></pre>
+<hr>
+<h3><strong>6(b) LIFO using Array (Stack)</strong></h3>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#define SIZE 100
+int stack[SIZE], top=-1;
+
+void push() {
+    int val;
+    printf("Enter value to push: ");
+    scanf("%d", &amp;val);
+    if(top == SIZE-1)
+        printf("Stack Overflow\n");
+    else
+        stack[++top] = val;
+}
+
+void pop() {
+    if(top == -1)
+        printf("Stack Underflow\n");
+    else
+        printf("Popped: %d\n", stack[top--]);
+}
+
+void display() {
+    int i;
+    if(top == -1)
+        printf("Stack empty\n");
+    else {
+        printf("Stack elements: ");
+        for(i=top;i&gt;=0;i--)
+            printf("%d ", stack[i]);
+        printf("\n");
+    }
+}
+
+void main() {
+    clrscr();
+    int choice;
+    do {
+        printf("\n1.Push 2.Pop 3.Display 4.Exit\nEnter choice: ");
+        scanf("%d",&amp;choice);
+        switch(choice){
+            case 1: push(); break;
+            case 2: pop(); break;
+            case 3: display(); break;
+        }
+    } while(choice!=4);
+    getch();
+}
+</code></pre>
+<hr>
+<h3><strong>7(a) Swap Two Numbers (Pass by Value &amp; Reference)</strong></h3>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void swapByValue(int a, int b) {
+    int temp = a;
+    a = b;
+    b = temp;
+    printf("\nInside swapByValue: a=%d b=%d", a, b);
+}
+
+void swapByReference(int *a, int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void main() {
+    clrscr();
+    int x, y;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &amp;x, &amp;y);
+
+    swapByValue(x, y);
+    printf("\nAfter swapByValue: x=%d y=%d", x, y);
+
+    swapByReference(&amp;x, &amp;y);
+    printf("\nAfter swapByReference: x=%d y=%d", x, y);
+    getch();
+}
+</code></pre>
+<hr>
+<h3><strong>7(b) Infix to Postfix using Stack</strong></h3>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;ctype.h&gt;
+#define SIZE 100
+
+char stack[SIZE];
+int top=-1;
+
+void push(char c){ stack[++top]=c; }
+char pop(){ return stack[top--]; }
+int precedence(char c){
+    if(c=='^') return 3;
+    else if(c=='*' || c=='/') return 2;
+    else if(c=='+' || c=='-') return 1;
+    else return 0;
+}
+
+void main() {
+    clrscr();
+    char infix[SIZE], postfix[SIZE];
+    int i=0, k=0;
+    char c;
+    printf("Enter infix expression: ");
+    gets(infix);
+
+    while((c=infix[i++])!='\0') {
+        if(isalnum(c))
+            postfix[k++] = c;
+        else if(c=='(')
+            push(c);
+        else if(c==')') {
+            while(top!=-1 &amp;&amp; stack[top]!='(')
+                postfix[k++] = pop();
+            pop(); // remove '('
+        } else {
+            while(top!=-1 &amp;&amp; precedence(stack[top])&gt;=precedence(c))
+                postfix[k++] = pop();
+            push(c);
+        }
+    }
+
+    while(top!=-1)
+        postfix[k++] = pop();
+    postfix[k]='\0';
+
+    printf("Postfix expression: %s", postfix);
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>8(a) Greatest Among Three Numbers (Nested if)</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main() {
+    clrscr();
+    int a, b, c;
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &amp;a, &amp;b, &amp;c);
+
+    if(a &gt; b) {
+        if(a &gt; c)
+            printf("%d is greatest", a);
+        else
+            printf("%d is greatest", c);
+    } else {
+        if(b &gt; c)
+            printf("%d is greatest", b);
+        else
+            printf("%d is greatest", c);
+    }
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>8(b) Addition of Two Polynomials Using Linked List</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;stdlib.h&gt;
+
+struct term {
+    int coeff;
+    int exp;
+    struct term *next;
+};
+
+struct term* createNode(int c, int e){
+    struct term* newNode = (struct term*)malloc(sizeof(struct term));
+    newNode-&gt;coeff = c;
+    newNode-&gt;exp = e;
+    newNode-&gt;next = NULL;
+    return newNode;
+}
+
+void display(struct term* poly){
+    while(poly){
+        printf("%dx^%d", poly-&gt;coeff, poly-&gt;exp);
+        if(poly-&gt;next) printf(" + ");
+        poly = poly-&gt;next;
+    }
+    printf("\n");
+}
+
+struct term* add(struct term* p1, struct term* p2){
+    struct term *result = NULL, *last = NULL;
+    while(p1 &amp;&amp; p2){
+        struct term *temp;
+        if(p1-&gt;exp &gt; p2-&gt;exp){
+            temp = createNode(p1-&gt;coeff, p1-&gt;exp);
+            p1 = p1-&gt;next;
+        } else if(p1-&gt;exp &lt; p2-&gt;exp){
+            temp = createNode(p2-&gt;coeff, p2-&gt;exp);
+            p2 = p2-&gt;next;
+        } else {
+            temp = createNode(p1-&gt;coeff + p2-&gt;coeff, p1-&gt;exp);
+            p1 = p1-&gt;next;
+            p2 = p2-&gt;next;
+        }
+        if(!result) result = last = temp;
+        else { last-&gt;next = temp; last = temp; }
+    }
+    while(p1){
+        struct term *temp = createNode(p1-&gt;coeff, p1-&gt;exp);
+        last-&gt;next = temp; last = temp; p1 = p1-&gt;next;
+    }
+    while(p2){
+        struct term *temp = createNode(p2-&gt;coeff, p2-&gt;exp);
+        last-&gt;next = temp; last = temp; p2 = p2-&gt;next;
+    }
+    return result;
+}
+
+void main(){
+    clrscr();
+    struct term *poly1=NULL, *poly2=NULL, *sum;
+    int n1, n2, c, e, i;
+
+    printf("Enter number of terms in first polynomial: ");
+    scanf("%d",&amp;n1);
+    for(i=0;i&lt;n1;i++){
+        printf("Enter coeff and exponent: ");
+        scanf("%d %d",&amp;c,&amp;e);
+        struct term *node = createNode(c,e);
+        node-&gt;next = poly1; poly1 = node;
+    }
+
+    printf("Enter number of terms in second polynomial: ");
+    scanf("%d",&amp;n2);
+    for(i=0;i&lt;n2;i++){
+        printf("Enter coeff and exponent: ");
+        scanf("%d %d",&amp;c,&amp;e);
+        struct term *node = createNode(c,e);
+        node-&gt;next = poly2; poly2 = node;
+    }
+
+    printf("Polynomial 1: "); display(poly1);
+    printf("Polynomial 2: "); display(poly2);
+
+    sum = add(poly1, poly2);
+    printf("Sum: "); display(sum);
+
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>9(a) Factorial Using Recursion</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+int factorial(int n){
+    if(n==0) return 1;
+    else return n*factorial(n-1);
+}
+
+void main(){
+    clrscr();
+    int num;
+    printf("Enter a number: ");
+    scanf("%d",&amp;num);
+    printf("Factorial of %d is %d", num, factorial(num));
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>9(b) Binary Tree Traversal</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;stdlib.h&gt;
+
+struct node{
+    int data;
+    struct node *left, *right;
+};
+
+struct node* createNode(int val){
+    struct node *n = (struct node*)malloc(sizeof(struct node));
+    n-&gt;data = val;
+    n-&gt;left = n-&gt;right = NULL;
+    return n;
+}
+
+void inorder(struct node *root){
+    if(root){
+        inorder(root-&gt;left);
+        printf("%d ", root-&gt;data);
+        inorder(root-&gt;right);
+    }
+}
+
+void preorder(struct node *root){
+    if(root){
+        printf("%d ", root-&gt;data);
+        preorder(root-&gt;left);
+        preorder(root-&gt;right);
+    }
+}
+
+void postorder(struct node *root){
+    if(root){
+        postorder(root-&gt;left);
+        postorder(root-&gt;right);
+        printf("%d ", root-&gt;data);
+    }
+}
+
+void main(){
+    clrscr();
+    struct node *root = createNode(1);
+    root-&gt;left = createNode(2);
+    root-&gt;right = createNode(3);
+    root-&gt;left-&gt;left = createNode(4);
+    root-&gt;left-&gt;right = createNode(5);
+
+    printf("Inorder: "); inorder(root);
+    printf("\nPreorder: "); preorder(root);
+    printf("\nPostorder: "); postorder(root);
+
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>10(a) Employee Structure</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;string.h&gt;
+
+struct employee{
+    int id, age;
+    char name[50], designation[50];
+    float salary;
+};
+
+void main(){
+    clrscr();
+    struct employee emp[5];
+    int i;
+
+    for(i=0;i&lt;5;i++){
+        printf("Enter details for employee %d\n", i+1);
+        printf("ID: "); scanf("%d",&amp;emp[i].id);
+        printf("Name: "); scanf("%s", emp[i].name);
+        printf("Age: "); scanf("%d",&amp;emp[i].age);
+        printf("Designation: "); scanf("%s", emp[i].designation);
+        printf("Salary: "); scanf("%f",&amp;emp[i].salary);
+    }
+
+    printf("\nEmployee Details:\n");
+    for(i=0;i&lt;5;i++){
+        printf("\nID: %d\nName: %s\nAge: %d\nDesignation: %s\nSalary: %.2f\n",
+            emp[i].id, emp[i].name, emp[i].age, emp[i].designation, emp[i].salary);
+    }
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>10(b) Binary Search in Array</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main(){
+    clrscr();
+    int arr[100], n, i, key, low, high, mid, found=0;
+    printf("Enter number of elements: "); scanf("%d",&amp;n);
+    printf("Enter elements in sorted order: ");
+    for(i=0;i&lt;n;i++) scanf("%d",&amp;arr[i]);
+    printf("Enter number to search: "); scanf("%d",&amp;key);
+
+    low=0; high=n-1;
+    while(low&lt;=high){
+        mid=(low+high)/2;
+        if(arr[mid]==key){ found=1; break;}
+        else if(arr[mid]&lt;key) low=mid+1;
+        else high=mid-1;
+    }
+
+    if(found) printf("%d found at position %d", key, mid+1);
+    else printf("%d not found", key);
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>11(a) Student Database using Random Access File</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;stdlib.h&gt;
+
+struct student{
+    int id;
+    char name[50];
+    int age;
+    float marks;
+};
+
+void main(){
+    clrscr();
+    FILE *fp;
+    struct student s;
+    int choice, pos;
+    
+    fp = fopen("student.dat", "rb+");
+    if(fp == NULL) fp = fopen("student.dat","wb+");
+
+    do{
+        printf("\n1.Insert 2.Update 3.Delete 4.Append 5.Display 6.Exit\nEnter choice: ");
+        scanf("%d",&amp;choice);
+        switch(choice){
+            case 1: // Insert
+                printf("Enter id, name, age, marks: ");
+                scanf("%d %s %d %f", &amp;s.id, s.name, &amp;s.age, &amp;s.marks);
+                fwrite(&amp;s, sizeof(s), 1, fp);
+                break;
+            case 2: // Update
+                printf("Enter record position to update: "); scanf("%d",&amp;pos);
+                fseek(fp, (pos-1)*sizeof(s), SEEK_SET);
+                printf("Enter new id, name, age, marks: ");
+                scanf("%d %s %d %f", &amp;s.id, s.name, &amp;s.age, &amp;s.marks);
+                fwrite(&amp;s, sizeof(s),1,fp);
+                break;
+            case 3: // Delete (overwrite with last record)
+                printf("Enter record position to delete: "); scanf("%d",&amp;pos);
+                fseek(fp,0,SEEK_END);
+                long last_pos = ftell(fp) - sizeof(s);
+                struct student last;
+                fseek(fp,last_pos,SEEK_SET);
+                fread(&amp;last,sizeof(s),1,fp);
+                fseek(fp,(pos-1)*sizeof(s),SEEK_SET);
+                fwrite(&amp;last,sizeof(s),1,fp);
+                // truncate file
+                fp = freopen("student.dat","rb+",fp);
+                ftruncate(fileno(fp), last_pos);
+                break;
+            case 4: // Append
+                fseek(fp,0,SEEK_END);
+                printf("Enter id, name, age, marks: ");
+                scanf("%d %s %d %f", &amp;s.id, s.name, &amp;s.age, &amp;s.marks);
+                fwrite(&amp;s,sizeof(s),1,fp);
+                break;
+            case 5: // Display
+                rewind(fp);
+                while(fread(&amp;s,sizeof(s),1,fp))
+                    printf("%d %s %d %.2f\n", s.id, s.name, s.age, s.marks);
+                break;
+        }
+    }while(choice!=6);
+    fclose(fp);
+    getch();
+}
+</code></pre>
+<blockquote>
+<p><strong>Note:</strong> <code>ftruncate()</code> may not work directly in Turbo C. For lab, simply read all records, skip the deleted one, and write back to a new file.</p>
+</blockquote>
+<hr>
+<h2><strong>11(b) Linear Search</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main(){
+    clrscr();
+    int arr[100], n, i, key, found=0;
+    printf("Enter number of elements: "); scanf("%d",&amp;n);
+    printf("Enter elements: ");
+    for(i=0;i&lt;n;i++) scanf("%d",&amp;arr[i]);
+    printf("Enter number to search: "); scanf("%d",&amp;key);
+
+    for(i=0;i&lt;n;i++){
+        if(arr[i]==key){ found=1; break; }
+    }
+
+    if(found) printf("%d found at position %d", key, i+1);
+    else printf("%d not found", key);
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>12(a) Calculator using Switch</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main(){
+    clrscr();
+    int choice;
+    float a,b,result;
+    printf("Enter two numbers: "); scanf("%f %f",&amp;a,&amp;b);
+    printf("1.Add 2.Subtract 3.Multiply 4.Divide\nEnter choice: "); scanf("%d",&amp;choice);
+
+    switch(choice){
+        case 1: result=a+b; break;
+        case 2: result=a-b; break;
+        case 3: result=a*b; break;
+        case 4: 
+            if(b!=0) result=a/b; 
+            else { printf("Division by zero!"); getch(); return;}
+            break;
+        default: printf("Invalid choice!"); getch(); return;
+    }
+    printf("Result: %.2f", result);
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>12(b) Insertion Sort</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main(){
+    clrscr();
+    int arr[]={16,43,92,9,71,88,7,3};
+    int n=8, i, j, key;
+
+    for(i=1;i&lt;n;i++){
+        key = arr[i];
+        j = i-1;
+        while(j&gt;=0 &amp;&amp; arr[j]&gt;key){
+            arr[j+1]=arr[j];
+            j--;
+        }
+        arr[j+1]=key;
+    }
+
+    printf("Sorted Array: ");
+    for(i=0;i&lt;n;i++) printf("%d ", arr[i]);
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>13(a) Prime Number Check</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main(){
+    clrscr();
+    int n, i, flag=0;
+    printf("Enter a number: "); scanf("%d",&amp;n);
+    if(n&lt;=1) flag=1;
+    for(i=2;i&lt;=n/2;i++){
+        if(n%i==0){ flag=1; break; }
+    }
+    if(flag==0) printf("%d is prime", n);
+    else printf("%d is not prime", n);
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>13(b) Binary Search Tree (Create, Insert, Delete, View)</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;stdlib.h&gt;
+
+struct node{
+    int data;
+    struct node *left, *right;
+};
+
+struct node* createNode(int val){
+    struct node *n = (struct node*)malloc(sizeof(struct node));
+    n-&gt;data = val; n-&gt;left = n-&gt;right = NULL;
+    return n;
+}
+
+struct node* insert(struct node* root, int val){
+    if(root==NULL) return createNode(val);
+    if(val&lt;root-&gt;data) root-&gt;left = insert(root-&gt;left,val);
+    else if(val&gt;root-&gt;data) root-&gt;right = insert(root-&gt;right,val);
+    return root;
+}
+
+void inorder(struct node *root){
+    if(root){ inorder(root-&gt;left); printf("%d ",root-&gt;data); inorder(root-&gt;right);}
+}
+
+void preorder(struct node *root){
+    if(root){ printf("%d ",root-&gt;data); preorder(root-&gt;left); preorder(root-&gt;right);}
+}
+
+void postorder(struct node *root){
+    if(root){ postorder(root-&gt;left); postorder(root-&gt;right); printf("%d ",root-&gt;data);}
+}
+
+void main(){
+    clrscr();
+    struct node *root=NULL;
+    int choice, val;
+    do{
+        printf("\n1.Insert 2.Inorder 3.Preorder 4.Postorder 5.Exit\nEnter choice: ");
+        scanf("%d",&amp;choice);
+        switch(choice){
+            case 1: printf("Enter value to insert: "); scanf("%d",&amp;val); root=insert(root,val); break;
+            case 2: printf("Inorder: "); inorder(root); break;
+            case 3: printf("Preorder: "); preorder(root); break;
+            case 4: printf("Postorder: "); postorder(root); break;
+        }
+    }while(choice!=5);
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>14(a) Payroll Application Using Structure</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+struct employee{
+    char name[50];
+    float basic, hra, da, pf, lic, deduction, gross, net;
+};
+
+void main(){
+    clrscr();
+    struct employee e;
+    printf("Enter employee name: "); scanf("%s", e.name);
+    printf("Enter basic pay: "); scanf("%f", &amp;e.basic);
+
+    e.hra = 0.18*e.basic;
+    e.da = 0.15*e.basic;
+    e.pf = 0.10*e.basic;
+    e.lic = 0.07*e.basic;
+    e.deduction = e.pf + e.lic;
+    e.gross = e.basic + e.hra + e.da;
+    e.net = e.gross - e.deduction;
+
+    printf("\nPayroll Details for %s", e.name);
+    printf("\nBasic: %.2f\nHRA: %.2f\nDA: %.2f\nPF: %.2f\nLIC: %.2f\nDeduction: %.2f\nGross: %.2f\nNet: %.2f",
+        e.basic, e.hra, e.da, e.pf, e.lic, e.deduction, e.gross, e.net);
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>14(b) Quick Sort</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void swap(int *a,int *b){ int t=*a;*a=*b;*b=t;}
+
+int partition(int arr[], int low, int high){
+    int pivot = arr[high];
+    int i = low-1, j;
+    for(j=low;j&lt;high;j++){
+        if(arr[j]&lt;pivot){ i++; swap(&amp;arr[i], &amp;arr[j]); }
+    }
+    swap(&amp;arr[i+1], &amp;arr[high]);
+    return i+1;
+}
+
+void quicksort(int arr[], int low, int high){
+    if(low&lt;high){
+        int pi = partition(arr,low,high);
+        quicksort(arr,low,pi-1);
+        quicksort(arr,pi+1,high);
+    }
+}
+
+void main(){
+    clrscr();
+    int arr[]={16,43,92,9,71,88,7,3};
+    int n=8, i;
+    quicksort(arr,0,n-1);
+    printf("Sorted Array: ");
+    for(i=0;i&lt;n;i++) printf("%d ", arr[i]);
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>15(a) Print Even Numbers up to 20</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main(){
+    clrscr();
+    int i;
+    printf("Even numbers up to 20: ");
+    for(i=2;i&lt;=20;i+=2) printf("%d ", i);
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>15(b) Hashing with Separate Chaining</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;stdlib.h&gt;
+
+#define SIZE 10
+
+struct node{
+    int data;
+    struct node* next;
+};
+
+struct node* hashTable[SIZE];
+
+void insert(int key){
+    int index = key%SIZE;
+    struct node* newNode = (struct node*)malloc(sizeof(struct node));
+    newNode-&gt;data = key; newNode-&gt;next = hashTable[index]; hashTable[index]=newNode;
+}
+
+void display(){
+    int i;
+    for(i=0;i&lt;SIZE;i++){
+        printf("%d: ", i);
+        struct node* temp = hashTable[i];
+        while(temp){ printf("%d -&gt; ", temp-&gt;data); temp=temp-&gt;next; }
+        printf("NULL\n");
+    }
+}
+
+void main(){
+    clrscr();
+    int arr[]={17,22,11,12,45,27,33,44};
+    int n=8, i;
+    for(i=0;i&lt;n;i++) insert(arr[i]);
+    printf("Hash Table:\n"); display();
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>16(a) Exchange Two Numbers Using Pointer and Function</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void swap(int *a, int *b){
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void main(){
+    clrscr();
+    int x, y;
+    printf("Enter two numbers: "); 
+    scanf("%d %d", &amp;x, &amp;y);
+    printf("Before swapping: x=%d, y=%d\n", x, y);
+    swap(&amp;x, &amp;y);
+    printf("After swapping: x=%d, y=%d", x, y);
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>16(b) Hashing with Linear Probing</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#define SIZE 10
+
+void main(){
+    clrscr();
+    int hashTable[SIZE], i;
+    int arr[] = {11, 32, 63, 18, 46, 5, 123};
+    int n = 7;
+
+    for(i=0;i&lt;SIZE;i++) hashTable[i]=-1;
+
+    for(i=0;i&lt;n;i++){
+        int key=arr[i], index=key%SIZE;
+        while(hashTable[index]!=-1){
+            index = (index+1)%SIZE; // Linear Probing
+        }
+        hashTable[index]=key;
+    }
+
+    printf("Hash Table:\n");
+    for(i=0;i&lt;SIZE;i++)
+        printf("%d: %d\n", i, hashTable[i]);
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>17(a) Matrix Multiplication</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main(){
+    clrscr();
+    int r1,c1,r2,c2,i,j,k;
+    printf("Enter rows and columns for first matrix: ");
+    scanf("%d %d",&amp;r1,&amp;c1);
+    printf("Enter rows and columns for second matrix: ");
+    scanf("%d %d",&amp;r2,&amp;c2);
+
+    if(c1!=r2){ printf("Matrix multiplication not possible"); getch(); return; }
+
+    int a[r1][c1], b[r2][c2], c[r1][c2];
+    printf("Enter first matrix:\n");
+    for(i=0;i&lt;r1;i++)
+        for(j=0;j&lt;c1;j++)
+            scanf("%d",&amp;a[i][j]);
+
+    printf("Enter second matrix:\n");
+    for(i=0;i&lt;r2;i++)
+        for(j=0;j&lt;c2;j++)
+            scanf("%d",&amp;b[i][j]);
+
+    for(i=0;i&lt;r1;i++)
+        for(j=0;j&lt;c2;j++){
+            c[i][j]=0;
+            for(k=0;k&lt;c1;k++)
+                c[i][j]+=a[i][k]*b[k][j];
+        }
+
+    printf("Resultant Matrix:\n");
+    for(i=0;i&lt;r1;i++){
+        for(j=0;j&lt;c2;j++)
+            printf("%d\t",c[i][j]);
+        printf("\n");
+    }
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>17(b) Linear Search</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main(){
+    clrscr();
+    int arr[100], n, i, key, found=0;
+    printf("Enter number of elements: "); scanf("%d",&amp;n);
+    printf("Enter elements: ");
+    for(i=0;i&lt;n;i++) scanf("%d",&amp;arr[i]);
+    printf("Enter number to search: "); scanf("%d",&amp;key);
+
+    for(i=0;i&lt;n;i++){
+        if(arr[i]==key){ found=1; break; }
+    }
+
+    if(found) printf("%d found at position %d", key, i+1);
+    else printf("%d not found", key);
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>18(a) Print Leap Years from 2000 to 2022</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main(){
+    clrscr();
+    int year;
+    printf("Leap years from 2000 to 2022:\n");
+    for(year=2000; year&lt;=2022; year++){
+        if((year%4==0 &amp;&amp; year%100!=0) || (year%400==0))
+            printf("%d ", year);
+    }
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>18(b) List ADT Using Linked List</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;stdlib.h&gt;
+
+struct node{
+    int data;
+    struct node* next;
+} *head=NULL;
+
+void create(int val){
+    struct node* newNode = (struct node*)malloc(sizeof(struct node));
+    newNode-&gt;data = val;
+    newNode-&gt;next = head;
+    head = newNode;
+}
+
+void insert(int val){
+    struct node* newNode = (struct node*)malloc(sizeof(struct node));
+    newNode-&gt;data = val;
+    newNode-&gt;next = NULL;
+    if(head==NULL) head=newNode;
+    else{
+        struct node* temp=head;
+        while(temp-&gt;next!=NULL) temp=temp-&gt;next;
+        temp-&gt;next=newNode;
+    }
+}
+
+void deleteNode(int val){
+    struct node *temp=head,*prev=NULL;
+    while(temp &amp;&amp; temp-&gt;data!=val){ prev=temp; temp=temp-&gt;next; }
+    if(temp==NULL){ printf("Value not found\n"); return; }
+    if(prev==NULL) head=temp-&gt;next;
+    else prev-&gt;next=temp-&gt;next;
+    free(temp);
+}
+
+void display(){
+    struct node* temp=head;
+    while(temp){ printf("%d -&gt; ", temp-&gt;data); temp=temp-&gt;next; }
+    printf("NULL\n");
+}
+
+void main(){
+    clrscr();
+    create(10); insert(20); insert(30);
+    printf("List after insertion: "); display();
+    deleteNode(20);
+    printf("List after deletion: "); display();
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>19(a) Transpose of a Matrix</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main(){
+    clrscr();
+    int r,c,i,j;
+    printf("Enter rows and columns: "); scanf("%d %d",&amp;r,&amp;c);
+    int mat[r][c], trans[c][r];
+
+    printf("Enter matrix elements:\n");
+    for(i=0;i&lt;r;i++)
+        for(j=0;j&lt;c;j++)
+            scanf("%d",&amp;mat[i][j]);
+
+    for(i=0;i&lt;r;i++)
+        for(j=0;j&lt;c;j++)
+            trans[j][i] = mat[i][j];
+
+    printf("Transpose Matrix:\n");
+    for(i=0;i&lt;c;i++){
+        for(j=0;j&lt;r;j++)
+            printf("%d\t", trans[i][j]);
+        printf("\n");
+    }
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>19(b) Merge Sort</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void merge(int arr[], int l, int m, int r){
+    int n1=m-l+1, n2=r-m;
+    int L[n1], R[n2], i,j,k;
+    for(i=0;i&lt;n1;i++) L[i]=arr[l+i];
+    for(j=0;j&lt;n2;j++) R[j]=arr[m+1+j];
+    i=j=0; k=l;
+    while(i&lt;n1 &amp;&amp; j&lt;n2){
+        if(L[i]&lt;=R[j]) arr[k++]=L[i++];
+        else arr[k++]=R[j++];
+    }
+    while(i&lt;n1) arr[k++]=L[i++];
+    while(j&lt;n2) arr[k++]=R[j++];
+}
+
+void mergesort(int arr[], int l, int r){
+    if(l&lt;r){
+        int m=(l+r)/2;
+        mergesort(arr,l,m);
+        mergesort(arr,m+1,r);
+        merge(arr,l,m,r);
+    }
+}
+
+void main(){
+    clrscr();
+    int arr[]={16,43,92,9,71,88,7,3}, n=8, i;
+    mergesort(arr,0,n-1);
+    printf("Sorted Array: ");
+    for(i=0;i&lt;n;i++) printf("%d ",arr[i]);
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>20(a) 6th Multiplication Table Up to 16 Steps</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+
+void main(){
+    clrscr();
+    int i;
+    printf("6th Multiplication Table:\n");
+    for(i=1;i&lt;=16;i++)
+        printf("6 x %d = %d\n", i, 6*i);
+    getch();
+}
+</code></pre>
+<hr>
+<h2><strong>20(b) BFS for Graph Using C</strong></h2>
+<pre class="language-c" tabindex="0"><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#define MAX 20
+
+int queue[MAX], front=-1, rear=-1;
+
+void enqueue(int v){ queue[++rear]=v; if(front==-1) front=0; }
+int dequeue(){ return queue[front++]; }
+int isEmpty(){ return front&gt;rear || front==-1; }
+
+void BFS(int adj[MAX][MAX], int n, int start){
+    int visited[MAX]={0}, i;
+    enqueue(start); visited[start]=1;
+    printf("BFS: ");
+    while(!isEmpty()){
+        int v = dequeue();
+        printf("%d ", v);
+        for(i=0;i&lt;n;i++){
+            if(adj[v][i]==1 &amp;&amp; !visited[i]){
+                enqueue(i); visited[i]=1;
+            }
+        }
+    }
+}
+
+void main(){
+    clrscr();
+    int n, i,j;
+    printf("Enter number of vertices: "); scanf("%d",&amp;n);
+    int adj[MAX][MAX];
+    printf("Enter adjacency matrix:\n");
+    for(i=0;i&lt;n;i++)
+        for(j=0;j&lt;n;j++)
+            scanf("%d",&amp;adj[i][j]);
+    BFS(adj,n,0); // BFS from vertex 0
+    getch();
+}
+</code></pre>
+<hr>
+
+            <script>
+                Prism.highlightAll();
+            </script>
+        
+        
+    </body></html>
